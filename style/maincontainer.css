@@ -1,0 +1,190 @@
+.basket {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  min-height: 100vh; 
+  padding-top: 20px; 
+  background-color: #f8f9fa;
+}
+
+.card {
+  width: 100%; 
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.basketinner {
+    width: 100%;
+    height: 500px;
+    background-color: #ff8400;
+    position: sticky;
+    top: 0;
+}
+
+.order {
+    width: calc(100% - 300px);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f8f9fa;
+}
+
+.meal{
+    width: 100%;
+    height: auto;
+}
+
+.basketinner h2 {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    box-shadow: 0px 1px 2px 2px black;
+}
+
+.btn-count {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.dish-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .dish-box strong {
+    font-size: 20px; 
+  }
+  .dish-box em {
+    color: #555;
+  }
+
+  .dishes-header {
+  font-size: 41px;
+  font-weight: 800;
+}
+
+.dessets-header {
+  font-size: 41px;
+  font-weight: 800;
+}
+
+.dishes-header h1 {
+  margin-top: 20px;
+}
+
+.dessets-header h1 {
+  margin-top: 50px;
+}
+
+.addbutton {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  background-color: white;
+  font-size: 30px;    
+  padding: 0;
+  border-radius: 90%;
+  height: 20px;
+  align-items: center;
+}
+
+.addbutton:hover {
+  color: #ff8400;
+  border-color: #ff8400;
+}
+
+.firstrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  color: red;
+}
+
+.mx-auto {
+  top: 0;
+  position: sticky !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 487px !important;
+}
+
+.mb-0 {
+  text-align: center;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-primary {
+  background-color: #ff8400 !important;
+}
+
+.btn-danger {
+  background-color: #ff8400;
+  border-color: #ff8400;
+}
+
+@media screen and (max-width: 768px) {
+  .basket {
+    display: none;
+  }
+
+  .basket-mobile {
+    display: block;
+  }
+
+  .order {
+    width: 100%;
+    padding: 18px !important;
+    display: flex;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .card-header {
+    text-align: center;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+}
